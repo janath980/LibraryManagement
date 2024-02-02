@@ -3,6 +3,7 @@
 
 #include "Book.h"
 #include "Student.h"
+
 #include <vector>
 #include <unordered_map>
 
@@ -20,6 +21,10 @@ public:
     void createStudent(const std::string& name, int admno);
     void issueBook(int admno, int bno);
     void returnBook(int admno, int bno);
+    
+    void showStudent(int admno) const;
+    void showBook(int bno) const; 
+
 };
 
-#endif // SYSTEM_H
+#endif 
